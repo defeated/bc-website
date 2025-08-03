@@ -1,0 +1,27 @@
+---
+import './src/styles/global.css'
+import imgIcon from '../assets/logo/icon.png'
+
+const description = 'Freelance writer creating case studies, white papers, eBooks, content marketing, and more free time for busy professionals.'
+---
+
+<html lang="en" class="scroll-smooth">
+	<head>
+		<meta charset="utf-8" />
+
+    <link rel="preconnect" href="https://rsms.me/">
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+
+    <link rel="icon" type="image/png" href={imgIcon.src} />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content={description}>
+
+    <title>Belynda Cianci | {description}</title>
+	</head>
+	<body>
+
+    <slot />
+
+  </body>
+</html>
